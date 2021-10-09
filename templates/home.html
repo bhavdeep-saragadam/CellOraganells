@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+	<h1 class="Title">Animal Cells</h1>
+	<h3 class="Title">By Bhavdeep</h3>
+
+
+<hr>
+
+<div class="jumbotron-light text-center ">
+
+	<h1>Animal Cell Diagram</h1>
+	<img src="https://www.seekpng.com/png/detail/368-3683323_diagram-animal-cell-7th-grade.png" alt="Diagram - Animal Cell 7th Grade@seekpng.com">
+
+</div>
+
+
+
+<hr>
+
+<div class="row">
+<div class="card" id="card">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Diagram_human_cell_nucleus_no_text.png" width="250px" height="250px"/>
+	<h1>Nucleus</h1>
+	<h3>CONTROL CENTER</h3>
+	<a class="btn btn-info btn-sm" href="{% url 'Nucleus'%}">Expand</a>
+	</div>
+
+
+	<div class="card">
+	<img src="https://bio.libretexts.org/@api/deki/files/18906/f-d%253A21eb08bf8f5237a7e8c8ff22c216876df4b5a080b8ee01c25f922c0e_IMAGE_TINY_IMAGE_TINY.1?revision=1" width="250px" height="250px"/>
+		
+		<h1>Cell Membrane</h1>
+		<h3>LAYER</h3>
+	<a href="{% url 'cell_mem' %}" class="btn btn-info btn-sm">Expand</a>
+
+		</div>
+
+
+
+	</div>
+
+
+
+
+
+
+
+<style>
+	body {
+		background: #32322C;
+		color: #39A0ED;
+		font-family: sans-serif;
+		overflow-x:hidden;
+	}
+	.card {
+		background: #13C4A3;
+		color: #32322C;
+		font-family: sans-serif;
+		width: 270px;
+		height: 400px;
+		border-radius: 10px;
+		text-align: center;
+		transition-duration: 1000ms;
+		margin: 10px;
+	}
+	.card:hover {
+		transform: scale(1.1);
+		margin: 10px;
+		box-shadow: 10px 10px 5px #284B63;
+	}
+	
+	.description {
+		color:#32322C;
+		}
+	
+	.Title {
+		text-align: center;
+	}	
+</style>
+
+
+
